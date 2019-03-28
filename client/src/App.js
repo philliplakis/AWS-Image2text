@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Button from '@material-ui/core/Button';
 
-const BASE_URL = 'http://localhost:8080/';
+const BASE_URL = 'http://localhost:8080';
 
 class App extends Component {
 
@@ -30,7 +30,8 @@ class App extends Component {
       data.append("image", image, image.name);
 
       // Make an AJAX upload request using Axios
-      return axios.post(BASE_URL + 'upload', data)
+      // remove BASE_URL if live via Apache Proxy...
+      return axios.post(BASE_URL + '/upload', data)
         .then(response => {
           console.log(response.data)
           this.setState({
