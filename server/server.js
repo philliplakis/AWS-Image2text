@@ -9,13 +9,9 @@ AWS.config.loadFromPath('./aws_config.json');
 
 // Init App
 const app = express();
-// Allow cross origin
 
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
+// Then pass them to cors:
+app.use(cors());
 
 // AWS Configs
 const s3 = new AWS.S3();

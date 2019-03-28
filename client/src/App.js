@@ -67,7 +67,7 @@ class App extends Component {
             <input className="form-control " type="file" title=" " id="contained-button-file" onChange={this.selectImages} multiple />
             <label htmlFor="contained-button-file">
               <Button variant="contained" component="span" >
-                Image to Upload
+                <b> Image to Upload </b>
               </Button>
             </label>
           </div>
@@ -75,7 +75,7 @@ class App extends Component {
           <br />
           <div className="col-sm-4">
             <Button variant="contained" color="primary" value="Submit"
-              onClick={this.uploadImages}>Submit</Button>
+              onClick={this.uploadImages}><b> Submit </b></Button>
           </div>
         </div>
         <hr /><br />
