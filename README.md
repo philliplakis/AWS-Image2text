@@ -13,11 +13,12 @@ React, Express, Axios, Multer, AWS-SDK
             "secretAccessKey":"SECRECT_KEY", // Your AWS IAM users Secret key.
             "region":"ap-southeast-2"   // choose your region for AWS.
             }
-
+            
+#### Start Web Server:
     cd client
     npm install && start
 
-#### New Terminal:
+#### New Terminal Start Backend:
     cd server
     npm install
     node server.js
