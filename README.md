@@ -1,5 +1,11 @@
 # AWS-Image2text
-Demo of AWS Rekognition web application
+Demo of AWS Rekognition web application,
+This is a POC on how a client could utilise Rekognition for pulling text from there users photos submitted to there portal.
+
+Nothing flash on the Front End, Just a simple Upload + Submit button.
+
+Upon hitting Submit, The app creates a new S3 Bucket, Uploads the image, Then sends it to Rekognition for Text Detection and returns the text found underneath.
+
 ##### Dep:
 React, Express, Axios, Multer, AWS-SDK
 
